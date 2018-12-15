@@ -1,0 +1,99 @@
+
+  .container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: monospace;
+  color: rgb(20, 142, 230);
+  font-size: 30px;
+}
+
+
+.input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  font-size: 1em;
+  outline: none;
+  color: gray;
+  font-family: monospace;
+  margin-bottom: 50px;
+}
+label {
+  color: black;
+}
+
+.cityDiv {
+  color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.city {
+  background-color: rgb(20, 142, 230);
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.city:hover {
+opacity: 0.7;
+}
+.cityFinal {
+  color: white;
+  font-size: 50px;
+  background-color: rgb(228, 85, 47);
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.searchButton {
+  background-color: rgb(201, 201, 201);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 2px;
+  height: 29px;
+  opacity: 0.7;
+}
+.searchButton:hover {
+  opacity: 1;
+}
+.weatherIcon {
+  height: 70px;
+  width: 70px;
+  float: left;
+}
+.weatherDescription{
+  color: grey;
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  margin-top: 13px;
+  margin-left: 15px
+}
+
+.details {
+  float: right;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pick{
+  color: grey;
+}
+.noSuchCity{
+  background-color: red;
+  color: white;
+  font-family:  sans-serif;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}

@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <p class='weatherDescription'>{{date}}</p>
+  <h1>CHECK WEATHER</h1>
+  <label> ENTER CITY NAME: </label>
+    <br>
+  <input  class="input" type="text" [(ngModel)]="cityName" (keyup.enter)='search()'>
+  <button class='searchButton' (click)='search()'>SEARCH</button>
+   <div *ngIf="found || noSuchCity" class="cityDiv">
+      <p *ngIf="!list" class='pick'>PICK FROM THE LIST BELOW:</p>
+      <div class='city' *ngFor='let foundCity of found; let i = index' (click)='final(i)' (click)='showWeather'>{{foundCity.name}}, {{foundCity.country}}</div>
+   </div>
+   <div *ngIf="chosen" class="cityDiv">
+       <div class='cityFinal'>
+         <p>
+           TEMP: {{temp}} °C
+         </p>
+       </div>
+       <div class="details">
+       <img class='weatherIcon'src={{icon}}/>
+       <p class='weatherDescription'>{{weatherDescription}}</p>
+       </div>
+   </div>
+   <div *ngIf="noSuchCity" class="noSuchCity">
+        <h3>NO SUCH CITY</h3>
+   </div>
+   <div *ngIf="!emptyInput" class="noSuchCity">
+        <h3>EMPTY INPUT</h3>
+   </div>
+</div>
+
+
+<router-outlet></router-outlet>
